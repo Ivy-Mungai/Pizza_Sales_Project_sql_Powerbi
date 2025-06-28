@@ -181,6 +181,8 @@ LIMIT 5;
 
 
 ## **Access the Dashboard**  
+"C:\Users\ivymu\Downloads\Pizza_sales_powerbi_project.pbix"
+
 Explore the live dashboard here: **[Link to Online Reports Page](https://app.powerbi.com/view?r=eyJrIjoiMDE5N2U2ZTAtZDA2Zi00MDgyLWI0MjMtZTlkYjc1ODc0MWVkIiwidCI6ImY3NDM5NmYzLTgwMTUtNGI3NC1iNDY4LWNkYTA0NTEzZDg0YyJ9)**  
 
 ---
@@ -193,5 +195,3 @@ Explore the live dashboard here: **[Link to Online Reports Page](https://app.pow
 
 ---
 
-### **Copyright:**  
-Project dataset created by ZeroAnalyst; it is a simulated company for learning purposes.
