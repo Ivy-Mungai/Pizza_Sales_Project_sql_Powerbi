@@ -1,7 +1,7 @@
 # Pizza_Sales_Project_sql_Powerbi
 
 ## **Objective**  
-The goal of the project is to analyze pizza sales data using SQL and Power BI to generate valuable business insights for data-driven decision-making.We focus on evaluating key performance indicators (KPIs) that are crucial for understanding customer behaviour and sales trends.
+The goal of the project is to analyze pizza sales data using SQL and Power BI to generate valuable business insights for data-driven decision-making. We focus on evaluating key performance indicators (KPIs) that are crucial for understanding customer behaviour and sales trends.
 
 
 ### **Technology Stack**  
@@ -10,12 +10,12 @@ The goal of the project is to analyze pizza sales data using SQL and Power BI to
 
 ### **Execution Steps**  
 
-1. **Data Importation:** Connected to various sources (MySQL, Excel, CSV) for a comprehensive dataset.  
-2. **Data Standardization:** Converted local currencies to USD using exchange rates for consistent reporting.  
-3. **Run SQL Queries for KPIs:** Established relationships between tables, merged product data, and calculated profitability.  
-4. **Data Analysis:** Developed interactive dashboards with multiple pages and visualizations like donut charts, bar charts, and maps.  
-5. **Advanced measures on Power BI:** Created dynamic DAX measures for KPIs such as revenue, profit, and YoY growth.  
-6. **Build Power BI Dashboard:** Implemented automated data refresh and configured RLS for secure data access.
+1. **Data Importation:** 
+2. **Data Standardization:**   
+3. **Run SQL Queries for KPIs:**  
+4. **Data Analysis:**  
+5. **Advanced measures on Power BI:**
+6. **Build Power BI Dashboard:**
 
 ---
 
@@ -181,9 +181,8 @@ LIMIT 5;
 
 
 ## **Access the Dashboard**  
-"C:\Users\ivymu\Downloads\Pizza_sales_powerbi_project.pbix"
 
-Explore the live dashboard here: **[Link to Online Reports Page](https://app.powerbi.com/view?r=eyJrIjoiMDE5N2U2ZTAtZDA2Zi00MDgyLWI0MjMtZTlkYjc1ODc0MWVkIiwidCI6ImY3NDM5NmYzLTgwMTUtNGI3NC1iNDY4LWNkYTA0NTEzZDg0YyJ9)**  
+Explore the live dashboard on PowerBi Desktop from my uploads above
 
 ---
 
