@@ -10,12 +10,12 @@ The goal of the project is to analyze pizza sales data using SQL and Power BI to
 
 ### **Execution Steps**  
 
-1. **Data Importation:** 
-2. **Data Standardization:**   
-3. **Run SQL Queries for KPIs:**  
-4. **Data Analysis:**  
-5. **Advanced measures on Power BI:**
-6. **Build Power BI Dashboard:**
+1. **Data Importation** 
+2. **Data Standardization**   
+3. **Run SQL Queries for KPIs**  
+4. **Data Analysis**  
+5. **Advanced measures on Power BI**
+6. **Build Power BI Dashboard**
 
 ---
 
