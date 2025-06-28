@@ -69,25 +69,116 @@ FROM pizza_sales ;
 ```
 ### 3.Data Analysis
 
+**Task 6. Daily trend for total orders**
+```sql
+UPDATE pizza_sales 
+SET order_date = STR_TO_DATE(order_date, '%d-%m-%Y') ;
+
+SELECT DAYNAME (order_date) AS order_day,
+      COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales 
+GROUP BY DAYNAME (order_date) ;
+```
+**Task 7. Monthly Trend for Orders**
+```sql
+SELECT
+      MONTHNAME(order_date) AS order_month,
+      COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY MONTHNAME(order_date) 
+ORDER BY COUNT(DISTINCT order_id) DESC ;
+```
+
+**Task 8. Percentage of sale by pizza category**
+```sql
+SELECT 
+      pizza_category,
+      SUM(total_price),
+      ROUND(SUM(total_price) / (SELECT SUM(total_price) FROM pizza_sales) * 100, 2) AS percentage_per_category
+FROM pizza_sales
+GROUP BY pizza_category ;
+
+```
+**Task 9. Percentage of sale by pizza size**
+```sql
+SELECT 
+      pizza_size,
+      ROUND(SUM(total_price) / (SELECT SUM(total_price) FROM pizza_sales) * 100,2) AS percentage_per_size
+FROM  pizza_sales
+GROUP BY pizza_size ;
+```
+**Task 10.Total pizzas sold by pizza category**
+```sql
+SELECT 
+      pizza_category,
+      COUNT(DISTINCT order_id) AS orders_by_category
+FROM pizza_sales
+GROUP BY pizza_category ;
+```
+**Task 11. Top 5 Best sellers by Revenue, Total Quantity, and Total orders**
+```sql
+SELECT 
+     pizza_name,
+     SUM(total_price) AS total_revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY SUM(total_price) DESC 
+LIMIT 5;
+
+
+SELECT 
+     pizza_name,
+     SUM(quantity) AS total_quantity
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY SUM(quantity) DESC 
+LIMIT 5;
+
+
+SELECT 
+     pizza_name,
+     COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY COUNT(DISTINCT order_id) DESC 
+LIMIT 5;
+
+```
+**Task 12. Bottom 5 worst sellers by Revenue, quantity and total pizza**
+```sql
+SELECT 
+     pizza_name,
+     SUM(total_price) AS total_revenue
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY SUM(total_price)
+LIMIT 5;
+
+SELECT 
+     pizza_name,
+     SUM(quantity) AS total_quantity
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY SUM(quantity)
+LIMIT 5;
+
+SELECT 
+     pizza_name,
+     COUNT(DISTINCT order_id) AS total_orders
+FROM pizza_sales
+GROUP BY pizza_name
+ORDER BY COUNT(DISTINCT order_id)
+LIMIT 5;
+```
+
 ### 4.Dashbaord Creation
 
-
-
-
-
 **Sales Overview Dashboard**  
-![Sales Overview](https://github.com/najirh/XGRIP-Power-BI-Executive-Dashboard/blob/main/dark%20dashboard.png)  
 
-**Product Analysis Dashboard**  
-![Product Analysis](https://github.com/najirh/XGRIP-Power-BI-Executive-Dashboard/blob/main/product.png)  
+<img width="800" alt="Screenshot 2025-06-28 123601" src="https://github.com/user-attachments/assets/bcdb31fe-7a53-4b70-b6d3-afac9a635b1c" />
 
-**Map Analysis Dashboard**  
-![Map Analysis](https://github.com/najirh/XGRIP-Power-BI-Executive-Dashboard/blob/main/dark%20map.png)  
+<img width="800" alt="Screenshot 2025-06-28 123519" src="https://github.com/user-attachments/assets/a5658f70-cac1-4ccc-b1d5-6e6d201746a3" />
 
-**Light and Dark Mode Example**  
-![Light and Dark Mode](https://github.com/najirh/XGRIP-Power-BI-Executive-Dashboard/blob/main/light%20dashboard.png)
-
----
 
 ## **Access the Dashboard**  
 Explore the live dashboard here: **[Link to Online Reports Page](https://app.powerbi.com/view?r=eyJrIjoiMDE5N2U2ZTAtZDA2Zi00MDgyLWI0MjMtZTlkYjc1ODc0MWVkIiwidCI6ImY3NDM5NmYzLTgwMTUtNGI3NC1iNDY4LWNkYTA0NTEzZDg0YyJ9)**  
