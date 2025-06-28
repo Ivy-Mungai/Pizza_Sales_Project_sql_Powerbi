@@ -6,7 +6,7 @@ The goal of the project is to analyze pizza sales data using SQL and Power BI to
 
 ### **Technology Stack**  
 - **Data Sources:** MySQL, Excel, CSV . 
-- **Tools:** Power BI, Power Query, DAX.  
+- **Tools:** Power BI, Power Query, DAX.
 
 ### **Execution Steps**  
 
