@@ -187,10 +187,10 @@ Explore the live dashboard on PowerBi Desktop from my uploads above
 ---
 
 ## **How to Use the Dashboard**  
-1. Use slicers to filter data by region, product category, or time period.  
-2. Navigate between pages using bookmarks and buttons.  
-3. Drillthrough on products or returns charts for detailed insights.  
-4. Toggle between light and dark modes for your viewing preference.
+1. Filter data by using the Pizza category slicer, adjust the data range slicer.  
+2. Explore Key Metrics and track overall performance using the top KPIs. 
+3. Navigate between pages "Home" and "Best/Worst sellers" page. 
+4. Analyze time-based Trends suchas daily trends and monthly trends.
 
 ---
 
